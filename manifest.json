@@ -1,0 +1,14 @@
+{
+  "manifest_version": 2,
+  "name": "NVIDIA Cookie Stripper",
+  "version": "1.0",
+  "description": "Removes cookies from requests to marketplace.nvidia.com to avoid TLS errors.",
+  "permissions": [
+    "webRequest",
+    "webRequestBlocking",
+    "*://marketplace.nvidia.com/*"
+  ],
+  "background": {
+    "scripts": ["background.js"]
+  }
+}
